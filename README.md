@@ -1,30 +1,29 @@
-# pf-task-manager
-Task Manger App for my Portfolio
 
-# Documentación de la Task Manger
+## Documentación del Proyecto: Programador de Tareas
 
-Esta documentación describe la aplicación "Task Manger", que permite a los usuarios gestionar sus tareas diarias de manera eficiente.
+### Descripción del Proyecto
+- El Programador de Tareas es una aplicación web simple diseñada para ayudar a los usuarios a gestionar sus tareas diarias. Permite añadir nuevas tareas, marcarlas como completadas, editarlas y eliminarlas. Además, las tareas se almacenan localmente en el navegador del usuario utilizando localStorage, por lo que persisten incluso después de cerrar el navegador.
 
-## Funcionalidades Principales
+### Estructura del Proyecto
+El proyecto se compone de los siguientes archivos:
 
-La aplicación Todo ofrece las siguientes funcionalidades principales:
+- index.html: Contiene la estructura HTML de la aplicación.
+- styles.css: Contiene los estilos CSS para la aplicación.
+- script.js: Contiene el código JavaScript para la funcionalidad de la aplicación.
 
-- **Agregar Tareas:** Permite a los usuarios añadir nuevas tareas especificando un título y detalles opcionales.
-- **Editar Tareas:** Los usuarios pueden modificar el título o los detalles de una tarea existente.
-- **Marcar Tareas como Completadas:** Permite a los usuarios indicar que una tarea ha sido completada.
-- **Eliminar Tareas:** Los usuarios pueden eliminar tareas que ya no necesitan.
-- **Lista de Tareas:** Muestra todas las tareas, mostrando las completadas y las pendientes.
+### Funcionalidades
+1. Añadir Tarea: Los usuarios pueden añadir una tarea escribiendo en el campo de entrada y haciendo clic en el botón "Añadir" o presionando la tecla "Enter".
+2. Completar Tarea: Los usuarios pueden marcar una tarea como completada haciendo clic en el botón de verificación.
+3. Editar Tarea: Los usuarios pueden editar una tarea existente haciendo clic en el botón de edición y proporcionando un nuevo texto.
+4. Eliminar Tarea: Los usuarios pueden eliminar una tarea haciendo clic en el botón de eliminación.
+5. Eliminar Tareas Completadas: Los usuarios pueden eliminar todas las tareas completadas haciendo clic en el botón "Eliminar tareas completadas".
+6. Persistencia: Las tareas se guardan en localStorage para que persistan incluso después de cerrar el navegador.
 
-## Tecnologías Utilizadas
+### Consideraciones Adicionales
+- Los estilos y la apariencia del proyecto se han mejorado utilizando Google Fonts y Font Awesome para los iconos.
+- La primera letra de cada tarea añadida se convierte automáticamente en mayúscula.
+- Las tareas completadas se mueven a una lista separada, y los botones para completar, editar y eliminar tareas proporcionan una experiencia de usuario interactiva.
 
-La aplicación Todo está desarrollada utilizando las siguientes tecnologías:
-
-- **Frontend:** HTML, CSS, JavaScript y React.js
-- **Backend:** Node.js y Express.js
-- **Base de Datos:** MongoDB
-- **Autenticación:** JSON Web Tokens (JWT)
-
-## Instalación
-
-Para instalar y ejecutar la aplicación en tu entorno local, sigue estos pasos:
+### Licencia
+Este proyecto está licenciado bajo la GNU General Public License versión 3.
 

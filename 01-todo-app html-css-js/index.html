@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/877d51e80c.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h1>Programador de Tareas</h1>
+            <div class="input-and-button">
+                <input id="input-task" type="text" placeholder="Añadir tarea">
+                <button id="add-task-btn">Añadir</button>
+            </div>
+        </div>
+        <div class="task-container">
+            <h2>Mis Tareas</h2>
+            <div class="task-list">
+                <ol class="ordered-tasks">
+                    <!-- Aquí se añadirán las tareas dinámicamente -->
+                </ol>
+            </div>
+            <h2 id="completed-tasks-title">Tareas completadas</h2>
+            <div class="completed-tasks">
+                <button id="clear-completed-btn">Eliminar tareas completadas</button>
+                <ol class="completed-list"></ol>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
