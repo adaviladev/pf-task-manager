@@ -1,118 +1,46 @@
-.shadows-into-light-regular {
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-}
-
-.ubuntu-light,
-body,
-input,
-#add-task-btn {
+html {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
 :root {
-    --color-primary: #40128b;
-    --color-secondary: #9336b4;
-    --color-accent: #dd58d6;
-    --color-highlight: #ffe79b;
+    --color-primary: #3e4344;
+    --color-secondary: #8b9192;
+    --color-accent: #FFFFFF;
+    --color-highlight: #FFFFFF;
+    --color-placeholder: #000000;
 }
 
 body {
-    max-width: 600px;
-    margin: auto;
-    background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
-    height: 100vh;
+    background-color: var(--color-primary);
+    box-sizing: border-box;
+    padding: 5%;
 }
 
 main {
-    margin: 40px 20px 20px 20px;
-    padding: 10px 20px;
     color: white;
-    border-radius: 8px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .header {
-    margin-left: 4px;
-    margin-right: 10px;
-    padding-left: 8px;
+    margin-bottom: 1vh;
 }
 
 .task-container {
-    margin: 20px 10px;
-    padding: 20px 8px 10px;
     background-color: var(--color-secondary);
     color: var(--color-highlight);
-    border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+    padding: 2%;
 }
 
-.ordered-tasks li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-ol {
-    padding-left: 5px;
-}
-
-.task-text {
-    flex: 1;
-    margin: 15px 0 10px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
-
-.complete-btn,
-.edit-btn,
-.delete-btn,
 #clear-completed-btn,
 #add-task-btn {
-    background-color: #F7E7DC;
-    border-radius: 4px;
-    color: rgb(0, 0, 0);
-    border: none;
     cursor: pointer;
-    padding: 5px;
-    font-weight: 500;
 }
 
-#add-task-btn {
-    background-color: #FFF8F3;
-}
-
-.delete-btn {
-    margin-left: 5px;
-}
-
-.complete-btn:hover {
-    background-color: var(--color-accent);
-    border: 1px solid black;
-}
-
-.delete-btn:hover {
-    background-color: #C73659;
-    border: 1px solid black;
-}
-
-#completed-tasks-title {
-    margin-bottom: 20px;
-}
-
-#clear-completed-btn {
-    margin-left: 5px;
-}
-
-.completed-list {
-    margin-left: 10px;
+.subtitles {
+    margin-bottom: 2vh;
 }
 
 .ordered-tasks li {
@@ -130,32 +58,16 @@ h2 {
     font-size: medium;
 }
 
-.input-and-button {
-    display: flex;
-    justify-content: space-between;
-}
-
 i {
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .task-content {
-    margin: 15px 0 5px;
+    margin-bottom: 5px;
 }
 
-input {
-    background-color: var(--color-secondary);
-    color: var(--color-highlight);
-    padding-left: 5px;
-}
-
-input::placeholder {
-    color: #fcd1d1; /* Color deseado para el texto del placeholder */
-}
-
-/* Estilo para tareas completadas */
 .completed-task {
     text-decoration: line-through;
     font-style: italic;
-  }
-  
+}
