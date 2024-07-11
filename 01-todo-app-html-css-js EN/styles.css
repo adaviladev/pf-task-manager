@@ -57,6 +57,12 @@ main {
     padding: 2%;
 }
 
+.task-content, .task-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
 #clear-completed-btn,
 #add-task-btn {
     cursor: pointer;

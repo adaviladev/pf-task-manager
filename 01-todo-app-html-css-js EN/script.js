@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const MAX_TASK_LENGTH = 50; // Extensión máxima de caracteres
 
   charCountDisplay.className = "char-count";
-  charCountDisplay.textContent = `${MAX_TASK_LENGTH} caracteres restantes`;
+  charCountDisplay.textContent = `${MAX_TASK_LENGTH} remaining characters`;
   addTaskBtn.after(charCountDisplay);
 
   let taskId = 1;
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const addTask = () => {
       const inputData = input.value.trim();
       if (inputData.length > MAX_TASK_LENGTH) {
-          alert(`La tarea no puede tener más de ${MAX_TASK_LENGTH} caracteres.`);
+          alert(`Task cannot have more than ${MAX_TASK_LENGTH} characters.`);
           return;
       }
       if (inputData) {
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
           taskText.addEventListener("input", () => {
               if (taskText.textContent.length > MAX_TASK_LENGTH) {
                   taskText.textContent = taskText.textContent.slice(0, MAX_TASK_LENGTH);
-                  alert(`La tarea no puede tener más de ${MAX_TASK_LENGTH} caracteres.`);
+                  alert(`Task cannot have more than ${MAX_TASK_LENGTH} characters.`);
               }
           });
           taskText.addEventListener("keydown", (e) => {
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const updateCharCount = () => {
       const remainingChars = MAX_TASK_LENGTH - input.value.length;
-      charCountDisplay.textContent = `${remainingChars} caracteres restantes`;
+      charCountDisplay.textContent = `${remainingChars} remaining characters`;
       charCountDisplay.style.color = remainingChars < 0 ? 'red' : 'white';
   };
 
